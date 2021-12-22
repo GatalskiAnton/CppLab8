@@ -2,7 +2,8 @@
 #include "Stack.h"
 #include "Calculator.h"
 int main() {
-    std::string expression = "1+2*3";
+    std::string expression;
+    std::cin >> expression;
     std::cout << CalculateExpression(expression);
     return 0;
 }

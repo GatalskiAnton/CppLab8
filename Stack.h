@@ -41,9 +41,10 @@ public:
     friend void operator << (StackOnArray<T> &stack, T data){
         stack.push(data);
     }
-//    friend void operator >> (StackOnArray<T> &stack){
-//        stack.pop(data);
-//    }
+    void print(std::ostream& Out){
+        for(int i = size-1; i >= 0; --i)
+            Out << stack[i] << '\n';
+    }
     friend bool operator == (StackOnArray<T> stack1, StackOnArray<T> stack2){
         return stack1.GetSize() == stack2.GetSize();
     }

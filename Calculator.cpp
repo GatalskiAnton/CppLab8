@@ -45,28 +45,26 @@ double CalculateExpression(std::string expression) {
     StackOnArray<double> result;
     for (int i = 0; i < expression.size(); ++i) {
         if (!IsOperation(expression[i])){
-            result.push(expression[i] - '0');
+            std::string str = "";
+            while(!IsOperation(expression[i]) && i != expression.size()){
+                str += expression[i++];
+            }
+            result.push(std::stod(str));
+            i--;
         }else{
             if (Priority(expression[i]) <= Priority(operations.top())){
-                std::cout << operations.top() << "\n";
-                result.push(Calculate(result[result.GetSize() - 2], result[result.GetSize() - 1], operations.top()));
-            }else{
-                operations.push(expression[i]);
+                double SecondValue = result.pop();
+                double FirstValue = result.pop();
+                result.push(Calculate(FirstValue, SecondValue, operations.pop()));
+
             }
+            operations.push(expression[i]);
         }
     }
-//    std::cout << operations.pop() << "\n";
-//    std::cout << operations.pop() << "\n";
-//
-//    std::cout << "-------------------------------------------------------\n";
-//    std::cout << result.pop() << "\n";
-//    std::cout << result.pop() << "\n";
-//    std::cout << result.pop() << "\n";
     while(!operations.IsEmpty()){
         double SecondValue = result.pop();
         double FirstValue = result.pop();
-        result.push(Calculate(FirstValue, SecondValue, operations.top()));
-        operations.pop();
+        result.push(Calculate(FirstValue, SecondValue, operations.pop()));
     }
     return result.top();
 }
