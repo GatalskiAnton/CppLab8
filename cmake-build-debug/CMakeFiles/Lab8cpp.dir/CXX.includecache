@@ -6,17 +6,15 @@
 
 #IncludeRegexTransform: 
 
-C:/Users/ag629/CLionProjects/CppLab8/Calculator.h
-
-C:/Users/ag629/CLionProjects/CppLab8/Stack.h
-iostream
--
-
-C:/Users/ag629/CLionProjects/CppLab8/main.cpp
-iostream
--
+C:/Users/ag629/CLionProjects/CppLab8/Calculator.cpp
 Stack.h
 C:/Users/ag629/CLionProjects/CppLab8/Stack.h
-Calculator.h
-C:/Users/ag629/CLionProjects/CppLab8/Calculator.h
+cmath
+-
+string
+-
+
+C:/Users/ag629/CLionProjects/CppLab8/Stack.h
+iostream
+-
 
