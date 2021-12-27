@@ -1,12 +1,17 @@
 #ifndef LAB8CPP_CALCULATOR_H
 #define LAB8CPP_CALCULATOR_H
 
+#include "Stack.h"
+using namespace std;
 
-    bool IsOperation(char element);
-    double Calculate(double FirstValue, double SecondValue, char operation);
-    int Priority(char element);
-    double CalculateExpression(std::string expression);
 
+bool IsOperation(char element);
+
+double Calculate(double FirstValue, double SecondValue, char operation);
+
+int Priority(char element);
+
+double CalculateExpression(std::string expression);
 
 
 #endif //LAB8CPP_CALCULATOR_H

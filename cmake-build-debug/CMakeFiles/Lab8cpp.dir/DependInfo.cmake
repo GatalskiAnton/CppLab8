@@ -10,11 +10,14 @@ set(CMAKE_DEPENDS_LANGUAGES
 set(CMAKE_DEPENDS_CHECK_CXX
   "C:/Users/ag629/CLionProjects/CppLab8/Calculator.cpp" "C:/Users/ag629/CLionProjects/CppLab8/cmake-build-debug/CMakeFiles/Lab8cpp.dir/Calculator.cpp.obj"
   "C:/Users/ag629/CLionProjects/CppLab8/main.cpp" "C:/Users/ag629/CLionProjects/CppLab8/cmake-build-debug/CMakeFiles/Lab8cpp.dir/main.cpp.obj"
+  "C:/Users/ag629/CLionProjects/CppLab8/tests.cpp" "C:/Users/ag629/CLionProjects/CppLab8/cmake-build-debug/CMakeFiles/Lab8cpp.dir/tests.cpp.obj"
   )
 set(CMAKE_CXX_COMPILER_ID "MSVC")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
+  "../googletest/googletest/include"
+  "../googletest/googletest"
   )
 
 # The set of dependency files which are needed:

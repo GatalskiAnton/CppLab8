@@ -1,6 +1,7 @@
 file(REMOVE_RECURSE
   "CMakeFiles/Lab8cpp.dir/Calculator.cpp.obj"
   "CMakeFiles/Lab8cpp.dir/main.cpp.obj"
+  "CMakeFiles/Lab8cpp.dir/tests.cpp.obj"
   "Lab8cpp.exe"
   "Lab8cpp.exe.manifest"
   "Lab8cpp.lib"

@@ -93,19 +93,40 @@ CMakeFiles\Lab8cpp.dir\Calculator.cpp.s: cmake_force
  /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\Lab8cpp.dir\Calculator.cpp.s /c C:\Users\ag629\CLionProjects\CppLab8\Calculator.cpp
 <<
 
+CMakeFiles\Lab8cpp.dir\tests.cpp.obj: CMakeFiles\Lab8cpp.dir\flags.make
+CMakeFiles\Lab8cpp.dir\tests.cpp.obj: ..\tests.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=C:\Users\ag629\CLionProjects\CppLab8\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Lab8cpp.dir/tests.cpp.obj"
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoCMakeFiles\Lab8cpp.dir\tests.cpp.obj /FdCMakeFiles\Lab8cpp.dir\ /FS -c C:\Users\ag629\CLionProjects\CppLab8\tests.cpp
+<<
+
+CMakeFiles\Lab8cpp.dir\tests.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Lab8cpp.dir/tests.cpp.i"
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe > CMakeFiles\Lab8cpp.dir\tests.cpp.i @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E C:\Users\ag629\CLionProjects\CppLab8\tests.cpp
+<<
+
+CMakeFiles\Lab8cpp.dir\tests.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Lab8cpp.dir/tests.cpp.s"
+	C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\cl.exe @<<
+ /nologo /TP $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) /FoNUL /FAs /FaCMakeFiles\Lab8cpp.dir\tests.cpp.s /c C:\Users\ag629\CLionProjects\CppLab8\tests.cpp
+<<
+
 # Object files for target Lab8cpp
 Lab8cpp_OBJECTS = \
 "CMakeFiles\Lab8cpp.dir\main.cpp.obj" \
-"CMakeFiles\Lab8cpp.dir\Calculator.cpp.obj"
+"CMakeFiles\Lab8cpp.dir\Calculator.cpp.obj" \
+"CMakeFiles\Lab8cpp.dir\tests.cpp.obj"
 
 # External object files for target Lab8cpp
 Lab8cpp_EXTERNAL_OBJECTS =
 
 Lab8cpp.exe: CMakeFiles\Lab8cpp.dir\main.cpp.obj
 Lab8cpp.exe: CMakeFiles\Lab8cpp.dir\Calculator.cpp.obj
+Lab8cpp.exe: CMakeFiles\Lab8cpp.dir\tests.cpp.obj
 Lab8cpp.exe: CMakeFiles\Lab8cpp.dir\build.make
 Lab8cpp.exe: CMakeFiles\Lab8cpp.dir\objects1.rsp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\ag629\CLionProjects\CppLab8\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Lab8cpp.exe"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=C:\Users\ag629\CLionProjects\CppLab8\cmake-build-debug\CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Linking CXX executable Lab8cpp.exe"
 	"C:\Program Files\JetBrains\CLion 2021.2.3\bin\cmake\win\bin\cmake.exe" -E vs_link_exe --intdir=CMakeFiles\Lab8cpp.dir --rc=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\rc.exe --mt=C:\PROGRA~2\WI3CF2~1\10\bin\100190~1.0\x86\mt.exe --manifests -- C:\PROGRA~2\MICROS~2\2019\COMMUN~1\VC\Tools\MSVC\1429~1.301\bin\Hostx86\x86\link.exe /nologo @CMakeFiles\Lab8cpp.dir\objects1.rsp @<<
  /out:Lab8cpp.exe /implib:Lab8cpp.lib /pdb:C:\Users\ag629\CLionProjects\CppLab8\cmake-build-debug\Lab8cpp.pdb /version:0.0 /machine:X86 /debug /INCREMENTAL /subsystem:console  kernel32.lib user32.lib gdi32.lib winspool.lib shell32.lib ole32.lib oleaut32.lib uuid.lib comdlg32.lib advapi32.lib 
 <<

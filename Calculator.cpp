@@ -1,8 +1,7 @@
-#include "Stack.h"
+#include "Calculator.h"
 #include <cmath>
 #include <string>
 
-using namespace std;
 
 int Priority(char PartOfExpression) {
     if (PartOfExpression == '^') return 3;
@@ -17,7 +16,7 @@ double Calculate(double FirstValue, double SecondValue, char Operation) {
     if (Operation == '*') return FirstValue * SecondValue;
     if (Operation == '/') {
         if (SecondValue == 0)
-            throw runtime_error("Cant' divide on 0");
+            throw std::runtime_error("Cant' divide on 0");
         return FirstValue / SecondValue;
     }
     if (Operation == '^')
